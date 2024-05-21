@@ -1,0 +1,75 @@
+
+.my-orders {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.my-orders-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.my-orders-order img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.my-orders-order p {
+    margin: 0 10px;
+    flex: 1;
+    color: #454545;
+
+}
+.my-orders-order p span{
+    color: tomato;
+
+}
+.my-orders-order button {
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: tomato;
+    color: rgb(237, 232, 232);
+    cursor: pointer;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.my-orders-order button:hover {
+    background-color:rgb(39, 78, 71);
+}
+@media (max-width: 768px) {
+    .my-orders-order {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-orders-order p,
+    .my-orders-order button {
+        margin: 5px 0;
+        flex: none;
+    }
+
+    .my-orders-order img {
+        margin: 0 0 15px 0;
+    }
+
+    .my-orders-order button {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
