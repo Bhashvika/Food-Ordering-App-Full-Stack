@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Foldit:wght@100..900&display=swap');
+.navbar{
+    padding: 1px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 30px;
+  
+      
+}
+.navbar h1 span{
+    margin-left:60px;
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  
+}
+.navbar img{
+    border:none;
+    border-radius: 80%;
+    width: 70px;
+    height: 70px;
+    
+}
+@media(max-width:700px){
+  .navbar h1{
+    font-size: 20px;
+    text-align: start;
+  }
+  .navbar span{
+    font-size: 20px;
+    display: flex;
+  }
+  .navbar img{
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      margin-right: 120px;
+  }
+
+}

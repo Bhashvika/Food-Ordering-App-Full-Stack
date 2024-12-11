@@ -1,0 +1,19 @@
+.Appdownload{
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 10px;
+}
+.app-download-img{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.app-download-img:hover{
+    transform: scale(1.05);
+}

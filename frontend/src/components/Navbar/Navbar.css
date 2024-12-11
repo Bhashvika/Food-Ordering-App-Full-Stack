@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Foldit:wght@100..900&display=swap');
+.navbar{
+    padding: 20px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  
+      
+}
+.navbar h1 span{
+    margin-left:60px;
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    color:rgb(236, 107, 64);
+    font-size: 20px;
+}
+.navbar-menu li{
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    gap:30px;
+    color: blueviolet;
+}
+.navbar-right img{
+    cursor: pointer;
+}
+.navbar-right button{
+    cursor: pointer;
+    width:100px;
+    border: 1px solid orangered;
+    color: orangered;
+    border-radius: 25px;
+    font-size: 19px;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.navbar button:hover{
+    background-color: rgb(239, 198, 232);
+    color: black;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(190, 164, 164);
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: orangered;
+    top: -8px;
+    right:-8px;
+    border-radius: 5px;
+}
+@media (max-width:1050px){
+    .navbar h1{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 40px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right  img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position:absolute;
+    display: none;
+    right:0;
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 1px solid white;
+    list-style: none;
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown img{
+    width: 20px;
+}
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
+@media (max-width:900px){
+    .navbar h1{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right  img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+}
+@media (max-width:750px){
+    .navbar-menu{
+        display:none
+    }
+    
+}

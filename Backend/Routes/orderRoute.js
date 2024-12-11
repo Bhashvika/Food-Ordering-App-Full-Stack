@@ -1,0 +1,10 @@
+import express from "express";
+import authMiddleWare from '../middleware/nameauth.js';
+import { listOrders, placeorder, updatestatus, userOrders, verifyorder } from "../contollers/ordercontroller.js";
+const orderRouter=express.Router();
+orderRouter.post("/place",authMiddleWare,placeorder);
+orderRouter.post("/verify",verifyorder);
+orderRouter.post("/userorders",authMiddleWare,userOrders);
+orderRouter.get('/list',listOrders);
+orderRouter.post('/status',updatestatus);
+export default orderRouter;
